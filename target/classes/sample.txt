@@ -1,0 +1,6 @@
+/^GateCrasher\s+v\d+\x2E\d+\x2C\s+Server\s+On−Line\x2E\x2E\x2E/smi
+/^PASS\s*\n/smi
+/^\w+\s+[^\n\s\?]*\.jsp/smi
+/GALLERY_BASEDIR=(https?|ftps?|php)/Ui
+/^MDTM \d+[−+]\D/smi
+/REST\s+[0−9]+\n/i

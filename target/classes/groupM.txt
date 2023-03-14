@@ -1,0 +1,97 @@
+/^USER\s+w0rm/smi
+/^GateCrasher\s+v\d+\x2E\d+\x2C\s+Server\s+On-Line\x2E\x2E\x2E/smi
+/^CWD\s+~root/smi
+/^SITE\s+EXEC/smi
+/^PASS\s*\n/smi
+/^530\s+(Login|User)/smi
+/^USER\s+(anonymous|ftp)[^\w]*[\r\n]/smi
+/^RCPT TO\x3a\s*\x3c?[^\n\x3e]{256}/im
+/^HELP\s[^\n]{500}/ism
+/^expn\s+decode/smi
+/^expn\s+root/smi
+/^rcpt\s+to\:\s*[\x7c\x3b]/smi
+/^rcpt to\:\s*decode/smi
+/^vrfy\s+decode/smi
+/^PRIVMSG\s+nickserv\s+IDENTIFY\s[^\n]{100}/smi
+/^Location\s*\x3a\s*\w+\x3a\/^vrfy\s+root/smi
+/^expn\s+\*@/smi
+/^AUTHINFO\s+USER\s[^\n]{200}/smi
+/^HELO\s[^\n]{500}/smi
+/^ETRN\s[^\n]{500}/smi
+/^SITE\s+CHOWN\s[^\n]{100}/smi
+/^MODE\s+[^ABSC]{1}/msi
+/^PWD\s.{190}/smi
+/^PASS\s[^\n]{50}/smi
+/^APOP\s[^\n]{256}/smi
+/^Username\:[^\n]{100}/smi
+/^CWD\s+~/smi
+/^STAT\s+[^\n]*\x2a/smi
+/^STAT\s+[^\n]*\x3f/smi
+/^200\s[^\n]{256}/smi
+/^SSH-\s?[^\n]{200}/ism
+/^Authorization\x3a\s*Basic\s+(?-i)YWRtaW46YWRtaW4[=\s]/smi
+/^SITE\s+NEWER/smi
+/^USER\s[^\n]{50}/smi
+/^SITE\s+CPWD\s[^\n]{100}/smi
+/^\sFIND\s[^\n]{100}/smi
+/^SITE\s+NEWER\s[^\n]{100}/smi
+/^SITE\s+ZIPCHK\s[^\n]{100}/smi
+/^RETR[^\n]*shadow$/smi
+/^AUTH\s[^\n]{50}/smi
+/^LIST\s[^\n]{10}/smi
+/^XTND\s[^\n]{50}/smi
+/^CAPA\s[^\n]{10}/smi
+/^TOP\s[^\n]{50}/smi
+/^STAT\s[^\n]{10}/smi
+/^DELE\s[^\n]{10}/smi
+/^RSET\s[^\n]{10}/smi
+/^DELE\s+-\d/smi
+/^UIDL\s+-\d/smi
+/^\s*Content-Transfer-Encoding\s*\x3A[^\n]{100}/mi
+/^XEXCH50\s+-\d/smi
+/^EXPN[^\n]{255}/smi
+/^VRFY[^\n]{255}/smi
+/^SEND FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}/smi
+/^SAML FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}/smi
+/^SOML FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}/smi
+/^MAIL FROM\x3a\s+[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}/smi
+/^RCPT TO\x3a\s*[\w\s@\.]{200,}\x3b[\w\s@\.]{200,}\x3b[\w\s@\.]{200}/smi
+/^LIST\s+\x22-W\s+\d+/smi
+/^PASS\s[^\n]{49}/smi
+/^USER\s[^\n]{49}/smi
+/^USER\s+y049575046/smi
+/^RMD\s+\x2f$/smi
+/^SITE\s+CHMOD\s[^\n]{200}/smi
+/^STOU\s[^\n]{200}/smi
+/^APOP\s+USER\s[^\n]{256}/smi
+/^DESCRIBE\s[^\n]{300}/smi
+/^MDTM \d+[-+]\D/smi
+/^sendsys\x3a[^\n]{21}/smi
+/^senduuname\x3a[^\n]{21}/smi
+/^version\x3a[^\n]{21}/smi
+/^checkgroups\x3a[^\n]{21}/smi
+/^ihave\x3a[^\n]{21}/smi
+/^sendme\x3a[^\n]{21}/smi
+/^newgroup\x3a[^\n]{32}/smi
+/^rmgroup\x3a[^\n]{32}/smi
+/^\x3c(REQIMG|RVWCFG)\x3e/ism
+/^GET[^s]{432}/sm
+/^HEAD[^s]{432}/sm
+/^PUT[^s]{432}/sm
+/^POST[^s]{432}/sm
+/^TRACE[^s]{432}/sm
+/^DELETE[^s]{432}/sm
+/^LOCK[^s]{432}/sm
+/^MKCOL[^s]{432}/sm
+/^COPY[^s]{432}/sm
+/^MOVE[^s]{432}/sm
+/^Content-Length\s*\x3a\s*-\d+/mi
+/^Max-dotdot[\s\r\n]*\d{3,}/msi
+/^PRIVMSG\s+[^\s]+\s+\x3a\s*\x01SENDLINK\x7c[^\x7c]{69}/smi
+/^Authorization\x3a(\s*|\s*\r?\n\s+)Basic\s+=/smi
+/^\w+\s+SUBSCRIBE\s[^\n]{100}/smi
+/^\w+\s+UNSUBSCRIBE\s[^\n]{100}/smi
+/^RNFR\s[^\n]{200}/smi
+/^\x2f/smi
+/^\s*Content-Type\s*\x3A\s*[^\r\n]{300}/mi
+/^\s*Content-Encoding\s*\x3A\s*[^\r\n]{300}/mi

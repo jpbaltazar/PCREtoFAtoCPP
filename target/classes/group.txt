@@ -1,0 +1,5 @@
+/^X?PAT\s+[^\n]{160}/i
+/^SEARCH\s+[^\n]{160}/i
+/^(\x03|\x04|\x05)/s
+/^POST\x20\x2fg[ao]lfstream\x26/
+/^POST\x20\x2f[A-F\d]{42}\x20HTTP/
